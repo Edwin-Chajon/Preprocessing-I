@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 @back:rgb(211, 255, 255);
 @box:rgb(104, 104, 104);
+@phone: ~'(max-width:500px)';
 
 .center(){
 	display:flex;
@@ -125,23 +126,21 @@ body {
 
 }
 
-	@media (max-width: 500px){
+	@media @phone{
 		.Intro{
 			img {
 				display: block;
 				margin-left: auto;
 				margin-right: auto;
 				width: 50%;
-				height: 50%;
-	
 			  }
-			flex-wrap: nowrap;
-			.space();
-			
-			background-color: rgb(180, 131, 226);
-			flex-direction: row;
+			.center();
+			background-color: rgb(146, 255, 228);
+			flex-wrap: wrap;
+			flex-direction: column;
 			padding-left: 10%;
-			padding-right: 27%;
+			padding-right: 10%;
+			max-width: 900px;
 		}
 	}
 ol, ul {

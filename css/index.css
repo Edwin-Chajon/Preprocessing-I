@@ -191,22 +191,25 @@ body .Contact {
 body h1 {
   padding: 2%;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .Intro {
-    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     padding: 2%;
     margin-top: 2%;
-    background-color: #b483e2;
-    flex-direction: row;
+    background-color: #92ffe4;
+    flex-wrap: wrap;
+    flex-direction: column;
     padding-left: 10%;
-    padding-right: 27%;
+    padding-right: 10%;
+    max-width: 900px;
   }
   .Intro img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    height: 50%;
   }
 }
 ol,
