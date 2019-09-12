@@ -104,9 +104,64 @@ nav,
 section {
   display: block;
 }
+head title {
+  font-size: 50px;
+}
 body {
   line-height: 1;
   background-color: azure;
+}
+body .head {
+  background-color: aquamarine;
+}
+body .Intro {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  margin-top: 2%;
+  background-color: box;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+body .Intro img {
+  display: block;
+  margin-left: 2%;
+  margin-right: auto;
+  width: 30%;
+  height: 30%;
+}
+body .Skills {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  margin-top: 2%;
+  background-color: box;
+  max-width: 900px;
+  flex-wrap: wrap;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+body .WorkStory {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  margin-top: 2%;
+  background-color: #7effa5;
+  flex-wrap: wrap;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+body .Contact {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 2%;
+  margin-top: 2%;
+  background-color: box;
+  max-width: 300px;
+  flex-wrap: wrap;
 }
 ol,
 ul {
