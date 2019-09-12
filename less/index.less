@@ -29,29 +29,46 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-@back:azure;
+@back:rgb(211, 255, 255);
 @box:rgb(104, 104, 104);
 
 .center(){
 	display:flex;
 	justify-content:center;
+	text-align: center;
+	.space();
+  } 
+  .textbox(){
+	
+		border: 2px solid white;
+		margin: 1%;
+		padding: 2%;
+
   }
   .space(){
 	  padding: 2%;
 	  margin-top: 2%;
   }
+ 
 
 head title{
 	font-size: 50px;
 }
+.head{
+	text-align: center;
+}
 
 body {
+	font-size: 20px;
 	line-height: 1;
 	background-color: @back;
 	.head{
 		background-color: aquamarine;
 	}
 	.Intro{
+		p{
+			.textbox();
+		}
 		img {
 			display: block;
 			margin-left: 2%;
@@ -61,15 +78,16 @@ body {
 
 		  }
 		.center();
-		.space();
 		background-color: box;
 		flex-direction: row;
 		padding-left: 10%;
-		padding-right: 10%;
+		padding-right: 27%;
 	}
 	.Skills{
 		.center();
-		.space();
+		p{
+			.textbox();
+		}
 		background-color: box;
 		max-width: 900px;
 		flex-wrap: wrap;
@@ -78,8 +96,12 @@ body {
 	}
 	.WorkStory{
 		.center();
-		.space();
-		background-color:rgb(126, 255, 165);
+
+		p{
+			.textbox();
+			background-color: aliceblue;
+		}
+		max-width: 900px;
 		flex-wrap: wrap;
 		padding-left: 10%;
 		padding-right: 10%;
@@ -91,11 +113,37 @@ body {
 		text-align: center;
 		.space();
 		background-color: box;
-		max-width: 300px;
+		max-width: 900px;
 		flex-wrap: wrap;
+		padding-left: 10%;
+		padding-right: 10%;
 	}
+	h1{
+		padding: 2%;
+	}
+	
+
 }
 
+	@media (max-width: 500px){
+		.Intro{
+			img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 50%;
+				height: 50%;
+	
+			  }
+			flex-wrap: nowrap;
+			.space();
+			
+			background-color: rgb(180, 131, 226);
+			flex-direction: row;
+			padding-left: 10%;
+			padding-right: 27%;
+		}
+	}
 ol, ul {
 	list-style: none;
 }
